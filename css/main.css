@@ -759,12 +759,13 @@ section.mobile-view {
   background-size: cover;
   position: relative;
   padding-bottom: 20px;
+  z-index: 2;
 }
 section.mobile-view::after {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.54);
+  background-color: rgba(0, 0, 0, 0.76);
   z-index: -1;
 }
 
@@ -822,7 +823,6 @@ img.encrypted-img {
 
 .mobile-view-design {
   background: #f4f4f4;
-  padding-bottom: 28px;
   display: none;
 }
 
