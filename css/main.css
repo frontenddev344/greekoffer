@@ -1,0 +1,1174 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap");
+/* line 14, ../scss/_frame.scss */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+/* line 18, ../scss/_frame.scss */
+::-webkit-scrollbar-track {
+  background: #1f2b42;
+}
+
+/* line 22, ../scss/_frame.scss */
+::-webkit-scrollbar-thumb {
+  background: #f8b940;
+  border-radius: 2px;
+}
+
+* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header.header {
+  background-color: #fff;
+}
+header.header .navigation-inner {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+header.header .navigation-inner::before {
+  bottom: 0;
+  content: "";
+  height: 1.5rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: calc(100% - 600px);
+  background: #1f2b42;
+}
+header.header .navigation-inner::after {
+  bottom: 0;
+  content: "";
+  height: 1.5rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: calc(100% - 600px);
+  background: #fff;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+header.header .navigation-inner .nav-menu {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  margin: 0;
+}
+header.header .navigation-inner .nav-menu li a {
+  color: #1f2b42;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+header.header .navigation-inner .nav-menu li a.active {
+  color: #f8b940;
+}
+header.header .navigation-inner .nav-menu li a:hover {
+  color: #f8b940;
+}
+header.header .navigation-inner span.toggle_menu,
+header.header .navigation-inner a.closebtn {
+  display: none;
+  font-size: 30px;
+}
+header.header .sidenavs .closebtn {
+  display: block;
+  line-height: 25px;
+  right: 7px;
+  margin: 0;
+  font-size: 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  color: #fff;
+  text-align: right;
+}
+
+section.hero-section .hero-section-inner {
+  background: #1f2b42;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #fff;
+  position: relative;
+  height: 482px;
+}
+section.hero-section .hero-section-inner::before {
+  background: #1f2b42;
+  bottom: 100%;
+  content: "";
+  height: 3rem;
+  position: absolute;
+  width: 300px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 1.5rem;
+  left: 0;
+}
+section.hero-section .hero-section-inner::after {
+  background: #1f2b42;
+  bottom: 100%;
+  content: "";
+  height: 3rem;
+  position: absolute;
+  width: 300px;
+  right: 0;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 20px;
+  right: 0;
+}
+section.hero-section .hero-section-inner .hero-section-content {
+  padding: 4rem 0 4rem 4rem;
+}
+section.hero-section .hero-section-inner .hero-section-content h1 {
+  font-size: 3.5em;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  line-height: 1.125;
+}
+section.hero-section .hero-section-inner .hero-section-content h1 span {
+  color: #f8b940;
+}
+section.hero-section .hero-section-inner .hero-section-content p {
+  color: #fff;
+  font-size: 16px;
+}
+section.hero-section .hero-section-inner .hero-section-content .hero-button {
+  margin-top: 2rem;
+}
+section.hero-section .hero-section-inner .hero-section-content .hero-button a.button {
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  padding: 1.25rem 4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+}
+section.hero-section .hero-section-inner .hero-section-content .hero-button a.button:hover {
+  background-color: #f8b940;
+  color: #fff;
+}
+section.hero-section .hero-section-inner .hero-image {
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+}
+
+section.combination {
+  padding: 60px 0 50px;
+  overflow: hidden;
+}
+section.combination .combination-inner .row {
+  align-items: center;
+}
+section.combination .combination-inner .row .col-lg-6 .combination-content h3 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #1f2b42;
+}
+section.combination .combination-inner .row .col-lg-6 .combination-content h3 span {
+  color: #f8b940;
+}
+section.combination .combination-inner .row .col-lg-6 .combination-content p {
+  margin-bottom: 1rem;
+  font-size: 16px;
+  color: #1f2b42;
+  line-height: 32px;
+  width: 100%;
+  max-width: 555px;
+}
+section.combination .combination-inner .row .col-lg-6 .combination-img {
+  border-radius: 9px;
+  overflow: hidden;
+}
+section.combination .combination-inner .row .col-lg-6 .combination-img figure img {
+  border-radius: 9px;
+  animation: zoom 20s ease-in-out infinite;
+}
+
+@keyframes zoom {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+section.casino-hotels {
+  padding: 50px 0;
+  overflow: hidden;
+}
+section.casino-hotels .casino-hotels-wrapper h4 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  color: #1f2b42;
+}
+section.casino-hotels .casino-hotels-inner {
+  margin: 4rem 0;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+section.casino-hotels .casino-hotels-inner .hotel-image img {
+  border-radius: 10px;
+  height: 268px;
+  object-fit: cover;
+}
+section.casino-hotels .casino-hotels-inner .hotel-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+section.casino-hotels .casino-hotels-inner .hotel-content p {
+  color: #1f2b42;
+  font-size: 16px;
+  line-height: 32px;
+}
+section.casino-hotels .casino-hotels-inner .hotel-content p img {
+  max-width: 120px;
+}
+section.casino-hotels .casino-hotels-inner .btn-wrapper a {
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  padding: 18px;
+  text-decoration: none;
+  text-transform: capitalize;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+  background-color: #f8b940;
+  border: 1px solid #f8b940;
+}
+section.casino-hotels .casino-hotels-inner .btn-wrapper a:hover {
+  background-color: transparent;
+  color: #f8b940;
+  border: 1px solid #f8b940;
+}
+
+section.perfect {
+  padding-bottom: 50px;
+}
+section.perfect .perfect-inner h4 {
+  font-size: 26px;
+  font-weight: 700;
+}
+section.perfect .perfect-wrapper ul li.heading {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 12px 0;
+  color: #1f2b42;
+}
+section.perfect .perfect-wrapper ul li.dark {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  position: relative;
+  padding-left: 20px;
+}
+section.perfect .perfect-wrapper ul li.dark::before {
+  position: absolute;
+  content: "";
+  background: #1f2b42;
+  width: 8px;
+  height: 8px;
+  top: 8px;
+  left: 0;
+  border-radius: 50%;
+}
+
+section.adventure {
+  padding-bottom: 50px;
+}
+section.adventure .adventure-wrapper p {
+  font-size: 16px;
+  color: #000;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+footer.footer {
+  background: #1f2b42;
+  color: #fff;
+  padding: 4rem 0;
+}
+footer.footer .footer-inner .about-menu h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f8b940;
+  margin-bottom: 20px;
+}
+footer.footer .footer-inner .about-menu p {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 28px;
+  max-width: 578px;
+}
+footer.footer .footer-inner .about-menu h6 {
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+footer.footer .footer-inner .about-menu ul li a {
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 0;
+  display: block;
+  transition: all 0.3s;
+}
+footer.footer .footer-inner .about-menu ul li a:hover {
+  color: #f8b940;
+  padding-left: 6px;
+}
+footer.footer .footer-inner .social-icon {
+  width: 54px;
+  height: 257px;
+  border-radius: 15px;
+  background: #f8b940;
+  margin-left: auto;
+  padding: 24px 0px 24px 0px;
+  text-align: center;
+}
+footer.footer .footer-inner .social-icon ul li {
+  padding: 0 0 16px 0;
+}
+footer.footer .footer-inner .social-icon ul li a {
+  background: transparent;
+  text-align: center;
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: #fff;
+  transition: all 0.3s;
+}
+footer.footer .footer-inner .social-icon ul li a:hover {
+  background-color: #1f2b42;
+}
+
+section.hero-section.about .hero-section-inner.about {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.hero-section.about .hero-section-inner.about .hero-section-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+section.hero-section.about .hero-section-inner.about .hero-section-content p {
+  max-width: 443px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.vegas-hotel {
+  padding: 60px 0;
+}
+.vegas-hotel .vegas-hotel-inner {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 2rem;
+  padding-top: 60px;
+}
+.vegas-hotel .vegas-hotel-inner .las-text {
+  padding: 0 20px;
+}
+.vegas-hotel .vegas-hotel-inner .las-text h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2b42;
+  line-height: 35px;
+  max-width: 532px;
+}
+.vegas-hotel .vegas-hotel-inner .las-text p {
+  color: #1f2b42;
+  font-size: 16px;
+  line-height: 32px;
+}
+.vegas-hotel .vegas-hotel-inner .las-text p img {
+  max-width: 120px;
+}
+.vegas-hotel .vegas-hotel-inner .lasvage img {
+  border-radius: 10px;
+}
+
+section.our-mission {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+section.our-mission .mission h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1f2b42;
+  margin: 0;
+  padding-bottom: 12px;
+}
+section.our-mission .mission p {
+  color: #000;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+}
+section.our-mission .mission h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2b42;
+}
+
+section.privacy {
+  padding: 60px 0;
+}
+section.privacy .privacy-inner h5 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f2b42;
+  text-transform: capitalize;
+  margin: 0;
+  padding-bottom: 14px;
+}
+section.privacy .privacy-inner p {
+  font-size: 16px;
+  color: #000;
+  margin: 0;
+  padding-bottom: 14px;
+  line-height: 30px;
+}
+section.privacy .privacy-inner p a {
+  color: #f8b940;
+}
+section.privacy .privacy-inner ul li {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+section.privacy .privacy-inner ul li::before {
+  position: absolute;
+  content: "";
+  background: #000;
+  width: 8px;
+  height: 8px;
+  top: 8px;
+  left: 0;
+  border-radius: 50%;
+}
+
+section.contact {
+  padding: 60px 0;
+}
+section.contact .contact-innre h5 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 12px;
+  color: #1f2b42;
+}
+section.contact .contact-innre p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000;
+  font-weight: 400;
+}
+section.contact .contact-innre p a {
+  color: #f8b940;
+}
+section.contact .form-inner-box {
+  margin-top: 60px;
+  border-radius: 20px;
+  background: #1f2b42;
+  padding: 50px;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.contact .form-inner-box .connect-inner-box .connect-billboard .inbox-wrapper label {
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+section.contact .form-inner-box .connect-inner-box .connect-billboard .inbox-wrapper input {
+  border: 1px solid #a9a9a9;
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+section.contact .form-inner-box .connect-inner-box .connect-billboard .inbox-wrapper textarea#w3review {
+  border: 1px solid #a9a9a9;
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+section.contact .form-inner-box .connect-inner-box .connect-billboard .inbox-wrapper input#SendMyMessage {
+  margin: 0;
+  font-size: 18px;
+  padding: 14px 24px;
+  text-transform: uppercase;
+  border: 1px solid #f8b940;
+  font-weight: 500;
+  transition: all 0.3s ease-in;
+  background: #f8b940;
+  color: #fff;
+  width: auto;
+}
+section.contact .form-inner-box .connect-inner-box .connect-billboard .inbox-wrapper input#SendMyMessage:hover {
+  background-color: transparent;
+  color: #f8b940;
+}
+
+section.networks-social {
+  padding-bottom: 60px;
+}
+section.networks-social .social-networks h5 {
+  font-size: 22px;
+  color: #1f2b42;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 10px;
+}
+section.networks-social .social-networks p {
+  font-size: 16px;
+  color: #000;
+  line-height: 30px;
+  font-weight: 400;
+}
+section.networks-social .social-networks ul li {
+  font-size: 16px;
+  color: #000;
+  line-height: 30px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+section.networks-social .social-networks ul li a {
+  color: #f8b940;
+}
+
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.knsl-preloader-frame {
+  background-color: #fff;
+  position: fixed;
+  z-index: 99999999999;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+}
+.knsl-preloader-frame .knsl-preloader {
+  opacity: 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.knsl-preloader-frame .knsl-preloader img {
+  width: 100%;
+  margin-bottom: 20px;
+  max-width: 200px;
+}
+.knsl-preloader-frame .knsl-preloader .knsl-preloader-progress {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 180px;
+  background-color: #1f2b42;
+  height: 4px;
+  margin-bottom: 20px;
+}
+.knsl-preloader-frame .knsl-preloader .knsl-preloader-progress .knsl-preloader-bar {
+  height: 100%;
+  background-color: #f8b940;
+}
+
+.knsl-preloader-frame.knsl-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.knsl-preloader-bar {
+  width: 0;
+}
+
+.las-text.mobile {
+  display: none;
+}
+
+p.vegas-p {
+  color: #1f2b42;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+h4.wrapperp {
+  margin-bottom: 20px !important;
+}
+
+h4.wrappers {
+  margin-bottom: 20px !important;
+}
+
+h5.weess {
+  margin-bottom: 30px;
+}
+
+.pop {
+  background: #ff9800;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.pop h5 {
+  color: #fff !important;
+}
+
+.pop p {
+  color: #fff !important;
+}
+
+.aria {
+  margin-bottom: 20px;
+}
+
+/*mobile-view-design*/
+.bgi-casino {
+  background: url(../images/bg-casiono.jpg);
+  padding: 70px 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 220px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.bgi-casino::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: -1;
+}
+
+section.mobile-view {
+  background-image: url(../images/greekbg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 20px;
+}
+section.mobile-view::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.54);
+  z-index: -1;
+}
+
+.main-rate-star p.rated-star:nth-child(3) {
+  font-size: 19px !important;
+}
+
+.bgi-casino span {
+  color: #d08a38;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.beste {
+  font-size: 25px !important;
+  font-weight: 600;
+  color: #fff;
+  max-width: 69%;
+  width: 100%;
+  line-height: 34px;
+}
+
+.encrypted {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.beting_logo span {
+  background: #f8b940;
+  padding: 4px 9px;
+  margin-left: -10px;
+}
+
+.encrypted p {
+  color: #fff !important;
+  font-size: 14px;
+  margin: 0 2px 0 0;
+}
+
+.myceltwo {
+  margin: 0 0 0 10px;
+}
+
+.mycelonw .main-rate-star {
+  display: flex;
+}
+
+img.encrypted-img {
+  max-width: 20px;
+  margin: 0 4px 0 0;
+}
+
+.mobile-view-design {
+  background: #f4f4f4;
+  padding-bottom: 28px;
+  display: none;
+}
+
+.mobile-view-design .warapper {
+  background: rgba(215, 217, 219, 0);
+  border-bottom: 4px solid #1a385a;
+  border-radius: 6px;
+  margin: 30px 0;
+}
+
+.mobile-view-design .warapper .main_box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background-color: #f8b940;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.mobile-view-design .warapper .main_box::after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #1f2b42;
+  position: absolute;
+  clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+  width: 55%;
+  z-index: -1;
+}
+
+.mobile-view-design .warapper .main_box .beting_logo {
+  width: 55%;
+}
+
+.mobile-view-design .warapper .main_box .beting_logo img {
+  width: 70%;
+  height: 130px;
+  object-fit: contain;
+}
+
+.mobile-view-design .warapper .main_box .one_o {
+  width: 45%;
+}
+
+.mobile-view-design .warapper .main_box .one_o h6.heading_main {
+  font-size: 23px !important;
+  color: #1a385a;
+  font-weight: 600;
+}
+
+.mobile-view-design .warapper .main_box .one_o h6.heading_main .one_o p {
+  color: #000;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.mobile-view-design .start_line {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  padding: 1px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background: #ffffff;
+  margin: 17px 0;
+}
+
+.mobile-view-design .start_line p.rating-text {
+  padding-bottom: 4px !important;
+  margin: 0px !important;
+  margin-top: 13px !important;
+}
+
+.mobile-view-design .start_line .notpad {
+  padding: 0 9px;
+}
+
+.mobile-view-design .start_line .notpad p {
+  padding-bottom: 0;
+}
+
+.mobile-view-design .start_line .main-rate-star {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.mobile-view-design .start_line .main-rate-star p.rated-star {
+  color: #fdbb4f;
+  font-size: 14px !important;
+}
+
+.mobile-view-design .awesome a {
+  color: #fff;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #1f2b42;
+  padding: 16px 44px;
+  text-align: center;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 37px;
+}
+
+.text_auality h3 {
+  color: #f8b940;
+  margin-bottom: 0;
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+.mobile-view-design p {
+  color: #fff;
+  font-size: 17px;
+}
+
+.one_o p {
+  line-height: 22px;
+  font-size: 24px;
+  color: #fff;
+}
+
+p.rating-text {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+
+.rating-text b {
+  color: #fff;
+  font-size: 27px;
+}
+
+.mobile-view-design p {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.text_auality p {
+  color: #000;
+}
+
+.rate.notpad {
+  margin-right: 10px;
+}
+
+.mycel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 10px;
+}
+
+.main-rate-star {
+  display: flex;
+}
+
+.desktop-version {
+  display: block;
+}
+
+.mobile-view-design.entertainment {
+  display: none;
+}
+
+/*mobile-view-design*/
+@media only screen and (max-width: 1023px) {
+  .sidenavs {
+    width: 0;
+    position: fixed;
+    background: #1f2b42;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow-x: hidden;
+    height: 100vh;
+    transition: all 0.3s;
+    z-index: 99999;
+  }
+  span.toggle_menu,
+  a.closebtn {
+    display: block !important;
+  }
+  .nav-menu {
+    align-items: flex-start;
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    margin: 0;
+    flex-direction: column;
+  }
+  header.header .navigation-inner .nav-menu li a {
+    color: #fff;
+  }
+  section.hero-section .hero-section-inner::before,
+  header.header .navigation-inner::after,
+  header.header .navigation-inner::before,
+  section.hero-section .hero-section-inner::after {
+    display: none;
+  }
+  section.hero-section .hero-section-inner {
+    border-radius: 20px;
+  }
+  header.header .navigation-inner {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .logo-img img {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .las-text.mobile {
+    display: block;
+  }
+  .vegas-hotel {
+    padding: 0 0 50px;
+  }
+  .desktop-text {
+    display: none;
+  }
+  .about-menu {
+    margin-bottom: 20px;
+  }
+  section.hero-section .hero-section-inner .hero-section-content {
+    padding: 30px;
+  }
+  section.hero-section .hero-section-inner .hero-section-content h1 {
+    font-size: 44px;
+  }
+  header.header .navigation-inner {
+    padding: 1rem 0;
+  }
+  section.hero-section .hero-section-inner {
+    height: auto;
+  }
+  section.hero-section .hero-section-inner .hero-image {
+    position: static;
+  }
+  .hotel-content {
+    margin-top: 30px;
+  }
+  section.casino-hotels .casino-hotels-inner {
+    margin: 2rem 0;
+  }
+  footer.footer .footer-inner .social-icon {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    margin-top: 16px;
+  }
+  footer.footer .footer-inner .social-icon ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  footer.footer .footer-inner .social-icon ul li {
+    padding: 0;
+  }
+  .vegas-hotel .vegas-hotel-inner .las-text {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  section.contact .form-inner-box {
+    padding: 40px 20px;
+  }
+  section.hero-section .hero-section-inner .hero-section-content {
+    padding: 18px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .desktop-version {
+    display: none;
+  }
+  .mobile-view-design.entertainment {
+    display: block;
+  }
+  section.home-main.mobile-table {
+    display: block;
+  }
+  .desktop-version {
+    display: none;
+  }
+  .mobile-view-design p {
+    text-align: left !important;
+    font-size: 15px;
+    color: #fff;
+  }
+  p.rated-star {
+    color: #fdbb4f;
+    font-size: 14px !important;
+    margin-bottom: 0 !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mobile-view-design .warapper .main_box .one_o h6.heading_main {
+    font-size: 17px !important;
+  }
+  .mobile-view-design .awesome a {
+    color: #fff;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #1f2b42;
+    padding: 12px 31px;
+    text-align: center;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 37px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .beste {
+    max-width: 95%;
+  }
+  .first-bonus {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    color: #2e3986;
+  }
+  section.home-main.mobile-table .container {
+    padding: 0 8px;
+  }
+  .myceltwo {
+    margin: 0;
+  }
+  p {
+    font-size: 14px;
+    text-align: justify;
+  }
+}
+@media screen and (max-width: 395px) {
+  .mobile-view-design .awesome a {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
